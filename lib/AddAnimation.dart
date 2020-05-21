@@ -17,7 +17,9 @@ class _AddAnimationState extends State<AddAnimation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: new Text("GoGame Task"),
+      ),
       body: Column(
         children: <Widget>[
           Padding(
@@ -50,7 +52,7 @@ class _AddAnimationState extends State<AddAnimation> {
                       ),
                       Expanded(
                         child: Center(
-                          child: Text("Red"),
+                          child: Text("Tap for animation"),
                         ),
                       ),
                     ],
@@ -78,7 +80,7 @@ class _HeroDetailPageState extends State<DetailPage> {
         children: <Widget>[
           Expanded(
             child: Hero(
-              tag: "heroTag",
+              tag: "Tag",
               child: Container(
                 color: Colors.red,
               ),
@@ -86,7 +88,7 @@ class _HeroDetailPageState extends State<DetailPage> {
           ),
           Expanded(
             child: Container(
-              child: Center(child: Text("This is the color red.", style: TextStyle(fontSize: 20.0),)),
+              child: Center(child: Text("Tap for animation", style: TextStyle(fontSize: 20.0),)),
             ),
           ),
         ],
